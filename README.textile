@@ -1,0 +1,44 @@
+h1. Cantango Demo
+
+*Welcome to the Cantango Rails 3 Demo application!*
+
+This demo app aims to demonstrate how to use "CanTango":https://github.com/kristianmandrup/cantango in a Rails 3 application. 
+
+h2. Integrations
+
+Integrations to be included are:
+
+* "Devise":https://github.com/plataformatec/devise - Authentication
+* "Troles"::https://github.com/kristianmandrup/cantango - Roles and Rolegroups
+* "Active Admin":https://github.com/gregbell/active_admin - Admin UI
+* "CanTango editor":https://github.com/stanislaw/cantango_editor - Web UI interface to manage permissions
+
+h2. Engines
+
+The following CanTango engines will be demonstrated, working together:
+
+* Permissions
+* Permits
+* User AC
+
+h2. Caching
+
+The engines will be executed in the following cache configuration
+
+* Permissions - Cache
+* Permits - Cache and No Cache
+* User AC - Cache
+
+The _No Cache_ mode for Permits, will allow inclusion of permit rules that can NOT be cached due to dynamic conditional logic surrounding them. Here a very simplistic example to illustrate such a scenario:
+
+<pre>
+def permit_rules
+  if the_sky_is_falling?
+   can :reach, Sky
+  else
+   cannot :reach, Sky
+  end
+end
+</pre>
+
+
