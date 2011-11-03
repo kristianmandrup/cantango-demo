@@ -1,4 +1,7 @@
 CanTango.config do |config|
-  config.engines.all :on
-  # more configuration here...
+  config.debug!
+
+  config.engine(:permission).set :on
+  config.engine(:permit).set :on
+  # config.enable_helpers :rest
 end

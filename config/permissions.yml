@@ -1,6 +1,20 @@
 account_types:
+
 user_types:
+  guest:
+    can:
+      read: all
+
 roles:
+  guest:
+    can:
+      read: all
+
 role_groups:
+
 licenses:
+  bloggers:
+    can:
+      manage: Post
+
 users:

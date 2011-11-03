@@ -6,4 +6,10 @@ class User < ActiveRecord::Base
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me
+
+  tango_user
+
+  troles_strategy :bit_many do |config|
+    config.valid_roles = [:editor, :publisher, :basic]
+  end.configure!
 end
