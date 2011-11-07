@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/kristianmandrup/cantango.git
-  revision: 6da7710e5023d2c819a171fd76f9217a5b0aedef
+  revision: a9e973fe5a168307c242c5e76354eefb511ded48
   specs:
     cantango (0.9.4.3)
       cancan (>= 1.4)
