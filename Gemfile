@@ -24,8 +24,8 @@ gem 'jquery-rails'
 gem 'devise'
 gem 'activeadmin'
 gem 'sourcify' # for CanTango caching
-gem 'cantango', :git => 'git://github.com/kristianmandrup/cantango.git'
-gem 'cantango_editor', :git => 'git://github.com/kristianmandrup/cantango_editor.git'
+gem 'cantango', :git => 'git://github.com/kristianmandrup/cantango.git' #, :path => '/Users/kmandrup/pr/stanislaw/cantango'
+gem 'cantango_editor' # , :git => 'git://github.com/kristianmandrup/cantango_editor.git'
 
 # Roles
 gem 'troles'

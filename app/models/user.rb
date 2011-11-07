@@ -7,6 +7,10 @@ class User < ActiveRecord::Base
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me
 
+  def self.guest
+    Guest.new
+  end
+
   tango_user
 
   troles_strategy :bit_many do |config|

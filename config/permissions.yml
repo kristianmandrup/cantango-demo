@@ -3,18 +3,21 @@ account_types:
 user_types:
   guest:
     can:
-      read: all
+      read:
+        - Project
 
 roles:
   guest:
     can:
-      read: all
+      read:
+        - all
 
 role_groups:
 
 licenses:
   bloggers:
     can:
-      manage: Post
+      manage:
+        - Post
 
 users:

@@ -1,4 +1,6 @@
 class ApplicationController < ActionController::Base
+  extend CanTango::Api::UserAccount::Ability
+
   protect_from_forgery
 
   def index
