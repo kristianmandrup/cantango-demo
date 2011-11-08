@@ -208,3 +208,7 @@ Devise.setup do |config|
   #   manager.default_strategies(:scope => :user).unshift :some_external_strategy
   # end
 end
+
+
+CanTango.config.permits.register_permit_class :admin_user, AdminUserPermit, :user, nil
+

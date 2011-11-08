@@ -8,3 +8,9 @@ CanTango.config do |config|
 
   # config.guest.user lambda { Guest.new }
 end
+
+module CanTango::Api
+  def self.current_admin
+    @current_admin ||= AdminUser.first
+  end
+end
