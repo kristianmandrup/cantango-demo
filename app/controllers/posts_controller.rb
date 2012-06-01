@@ -21,7 +21,7 @@ class PostsController < ApplicationController
   end
 
   def update
-    update_attributes ? redirect_to(post, notice: 'Post was successfully updated.' : render(action: "edit")
+    update_attributes ? redirect_to(post, notice: 'Post was successfully updated.') : render(action: "edit")
   end
 
   def destroy
